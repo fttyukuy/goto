@@ -32,7 +32,7 @@ export default {
   },
   methods: {
     getInfo () {
-      axios.get('/api/index.json?city=' + this.city)
+      axios.get('goto/dist/api/index.json?city=' + this.city)
         .then((res) => {
           res = res.data
           if (res.ret && res.data) {
