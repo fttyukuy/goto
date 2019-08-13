@@ -12,10 +12,10 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-        target: 'http://localhost:8080',
-        pathRewrite: {
-          '^/api' : '/static/mock/'
-        }
+        target: 'https://fttyukuy.github.io/goto/dist'
+        // pathRewrite: {
+        //   '^/api' : '/static/mock/'
+        // }
       }
     },
 
@@ -56,7 +56,7 @@ module.exports = {
 
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
-    assetsSubDirectory: 'static',
+    assetsSubDirectory: 'goto/dist/static',
     assetsPublicPath: '/',
 
     /**
